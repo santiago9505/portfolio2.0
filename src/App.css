@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   --main-bg-color: #1e2d42;
+  --secondary-bg-color: #e0e7f0;
 }
 
 body {

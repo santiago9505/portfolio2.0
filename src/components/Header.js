@@ -37,7 +37,7 @@ const Header = () => {
       </figure>
       <div className="menu">
         <div onClick={handleClick} className="header__menu--container">
-          <Hamburger duration={1} size={32} color="#4CA4D3" />
+          <Hamburger duration={1} size={50} color="#4CA4D3" />
         </div>
         <ul
           id="menu"

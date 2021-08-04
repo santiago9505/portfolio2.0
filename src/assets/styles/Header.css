@@ -1,4 +1,5 @@
 .header {
+  padding: 1rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -8,8 +9,8 @@
 
 .darkMode__button {
   cursor: pointer;
-  left: 0;
-  top: 1.35rem;
+  left: 1.5rem;
+  top: 2.6rem;
   position: absolute;
 }
 
@@ -18,6 +19,7 @@
 }
 
 .darkMode__button:hover img:hover {
+  box-shadow: 0 0 10px #999;
   border-radius: 20px;
   border: 1px gray solid;
   transform: scale(1.2);

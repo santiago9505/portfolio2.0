@@ -1,0 +1,64 @@
+.main {
+  padding: 0 1rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+}
+
+.main__title--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.main__title--container h1:first-child {
+  color: #99aecc;
+}
+
+.main__title--container h1:nth-child(2) {
+  color: #3475cf;
+}
+.main__title--container h1:nth-child(3) {
+  color: white;
+}
+
+.image__container {
+  display: flex;
+  justify-content: center;
+  margin: 34px 0 20px 0;
+}
+
+.image__container img {
+  width: 13.75rem;
+  border-bottom: 6px #e1e1e1 solid;
+}
+
+.main__paragraph--container {
+  font-size: 17px;
+  font-family: "Montserrat";
+  display: flex;
+  font-weight: lighter;
+  color: white;
+  padding-left: 38px;
+  padding-right: 18.5px;
+}
+
+.main__courses--container {
+  display: grid;
+  margin: 2rem 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  background: #e1e1e1;
+  border-radius: 15px;
+  padding: 1rem;
+  font-size: 12px;
+  text-align: center;
+}
+
+.course img {
+  width: 4.3rem;
+}

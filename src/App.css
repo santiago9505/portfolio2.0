@@ -7,10 +7,18 @@
 }
 
 body {
-  padding: 1rem;
+  padding: 0;
   background-color: var(--main-bg-color);
 }
 
-.background-red {
-  background-color: aqua;
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 2.2rem;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: 500;
+  font-style: normal;
 }

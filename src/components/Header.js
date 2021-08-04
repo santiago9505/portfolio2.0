@@ -6,6 +6,7 @@ import LogoDark from "../assets/static/logodark.png";
 import MenuIcon from "../assets/static/menu-icon.png";
 import DarkMode from "../assets/static/darkmode-icon.png";
 import LightMode from "../assets/static/logolight.png";
+import { Sling as Hamburger } from "hamburger-react";
 
 //styles
 import "../assets/styles/Header.css";
@@ -15,10 +16,10 @@ import "../assets/styles/Header.css";
 const Header = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [theme, setTheme] = useState(false);
-  const [menu, setMenu] = useState(false);
+  const [isOpen, setOpen] = useState(false);
 
   const handleClick = () => {
-    setMenu(!menu);
+    setOpen(!isOpen);
   };
 
   const handleTheme = () => {
@@ -35,13 +36,15 @@ const Header = () => {
         <img src={LogoDark} alt="santigeek-logo" />
       </figure>
       <div className="menu">
-        <div className="header__menu--container">
-          <img src={MenuIcon} alt="menu-icon" onClick={handleClick} />
+        <div onClick={handleClick} className="header__menu--container">
+          <Hamburger duration={1} size={32} color="#4CA4D3" />
         </div>
         <ul
           id="menu"
           className={
-            menu ? "header__items--container" : "header__items--container-hide"
+            isOpen
+              ? "header__items--container"
+              : "header__items--container-hide"
           }
         >
           <li>

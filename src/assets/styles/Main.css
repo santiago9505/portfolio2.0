@@ -157,3 +157,134 @@
     width: 9rem;
   }
 }
+
+@media (min-width: 1152px) {
+  .main {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-start;
+    padding: 1rem 4.5rem;
+    height: 73.5vh;
+    margin: 0;
+    font-family: "Montserrat";
+  }
+  .main__title--container {
+    margin-top: 4rem;
+  }
+  .main__title--container h1 {
+    align-self: flex-start;
+    font-size: 3.6rem;
+    line-height: 4rem;
+    text-align: start;
+  }
+  .image__container {
+    margin: 0 1rem 0 0;
+  }
+  .profile__image {
+    width: 50vh;
+    border-bottom: 6px #e1e1e1 solid;
+  }
+
+  .main__paragraph--container h3 {
+    margin-top: 8rem;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .main__courses--container {
+    width: 100%;
+    height: 20vh;
+    overflow: scroll;
+    position: absolute;
+    display: grid;
+    border-radius: unset;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0 1rem;
+    align-items: center;
+    gap: 3rem;
+    left: 0;
+    bottom: 0;
+  }
+
+  .main__courses--container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .course {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .course img {
+    width: 5.5rem;
+  }
+}
+
+@media (min-width: 1366px) {
+  .main {
+    height: 70vh;
+  }
+  .main__title--container {
+    margin-top: 3rem;
+  }
+  .main__title--container h1 {
+    font-size: 3.76rem;
+    line-height: 4rem;
+    text-align: start;
+  }
+  .profile__image {
+    width: 52vh;
+    border-bottom: 6px #e1e1e1 solid;
+  }
+  .main__courses--container {
+    height: 19vh;
+  }
+  .course {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .course img {
+    width: 5.1rem;
+  }
+}
+@media (min-width: 1500px) {
+  .main {
+    height: 72vh;
+    padding: 1.5rem 5rem;
+  }
+  .main__title--container {
+    margin-top: 5rem;
+  }
+
+  .main__title--container h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  .profile__image {
+    width: 51vh;
+  }
+
+  .main__paragraph--container h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .main__courses--container {
+    height: 16vh;
+  }
+
+  .main__courses--container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .course {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .course img {
+    width: 6rem;
+  }
+}

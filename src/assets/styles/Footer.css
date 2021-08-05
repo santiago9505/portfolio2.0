@@ -109,3 +109,45 @@ a {
     width: 5rem;
   }
 }
+
+@media (min-width: 1152px) {
+  footer {
+    position: sticky;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 0.8rem;
+    height: 11.5vh;
+  }
+  .footer__items--container {
+    flex-direction: row;
+  }
+  .social__media--container {
+    gap: 1rem;
+  }
+  .icon__container img {
+    border-radius: 2px;
+    width: 2rem;
+  }
+  .footer__text--container {
+    width: auto;
+  }
+}
+
+@media (min-width: 1366px) {
+  footer {
+    height: 13.6vh;
+  }
+}
+@media (min-width: 1500px) {
+  footer {
+    height: 14.12vh;
+    font-size: 1rem;
+  }
+  .social__media--container {
+    gap: 1.3rem;
+  }
+  .icon__container img {
+    border-radius: 4px;
+    width: 2.8rem;
+  }
+}

@@ -58,7 +58,8 @@
 
 .menu__item {
   text-decoration: none;
-  color: white;
+  color: #99aecc;
+  font-weight: 500;
 }
 
 .header__logo--container img {
@@ -163,7 +164,7 @@
 
 @media (min-width: 1152px) {
   .header {
-    padding: 1rem 2rem;
+    padding: 1rem 5rem;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -183,7 +184,7 @@
     display: flex;
     flex-direction: row;
     font-family: "Montserrat";
-    font-size: 19px;
+    font-size: 1rem;
     gap: 3rem;
     text-decoration: none;
     list-style: none;
@@ -195,7 +196,7 @@
     display: flex;
     flex-direction: row;
     font-family: "Montserrat";
-    font-size: 19px;
+    font-size: 1rem;
     gap: 3rem;
     text-decoration: none;
     list-style: none;
@@ -204,11 +205,15 @@
   }
 
   .darkMode__button img {
+    position: absolute;
+    z-index: 1;
     width: 3rem;
+    cursor: pointer;
   }
 
   .darkMode__button {
-    left: 93%;
+    left: initial;
+    right: 8rem;
     top: 7rem;
   }
 }
@@ -216,5 +221,30 @@
 @media (min-width: 1366px) {
   .header__logo--container img {
     width: 12.13rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .header {
+    padding: 1.8rem 5.4rem;
+  }
+  .header__logo--container img {
+    width: 14rem;
+  }
+  .header__items--container-hide {
+    font-size: 1.4rem;
+    gap: 4rem;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    justify-items: start;
+  }
+  .darkMode__button img {
+    width: 3.5rem;
+  }
+
+  .darkMode__button {
+    right: 9rem;
+    top: 9rem;
   }
 }

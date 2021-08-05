@@ -5,11 +5,11 @@ import Footer from "../components/Footer.js";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Header />
       <Main />
       <Footer />
-    </div>
+    </>
   );
 };
 

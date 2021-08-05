@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 //assets
 import LogoDark from "../assets/static/logodark.png";
-import MenuIcon from "../assets/static/menu-icon.png";
 import DarkMode from "../assets/static/darkmode-icon.png";
 import LightMode from "../assets/static/logolight.png";
 import { Sling as Hamburger } from "hamburger-react";

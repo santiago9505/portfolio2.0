@@ -15,6 +15,18 @@
   text-align: center;
 }
 
+.main__title--container h1 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 2.5rem;
+}
+
+.main__paragraph--container h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 .main__title--container h1:first-child {
   color: #99aecc;
 }
@@ -32,7 +44,7 @@
   margin: 34px 0 20px 0;
 }
 
-.image__container img {
+.profile__image {
   width: 13.75rem;
   border-bottom: 6px #e1e1e1 solid;
 }
@@ -49,16 +61,99 @@
 
 .main__courses--container {
   display: grid;
+  width: 92%;
   margin: 2rem 0;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
+  gap: 0.6rem;
   background: #e1e1e1;
   border-radius: 15px;
-  padding: 1rem;
+  padding: 0.8rem;
   font-size: 12px;
   text-align: center;
 }
 
 .course img {
-  width: 4.3rem;
+  width: 3.7rem;
+}
+
+@media (min-width: 366px) {
+  .main__title--container h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .profile__image {
+    width: 16rem;
+    border-bottom: 6px #e1e1e1 solid;
+  }
+  .main__paragraph--container h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+  .main__courses--container {
+    gap: 1rem;
+  }
+
+  .course {
+    font-size: 15px;
+  }
+
+  .course img {
+    width: 4.7rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .main__title--container h1 {
+    font-size: 3.8rem;
+    line-height: 4rem;
+  }
+  .profile__image {
+    width: 24rem;
+    border-bottom: 6px #e1e1e1 solid;
+  }
+  .main__paragraph--container h3 {
+    width: 26rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  .main__courses--container {
+    gap: 1rem;
+  }
+
+  .course {
+    font-size: 16px;
+  }
+
+  .course img {
+    width: 7rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main__title--container h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  .profile__image {
+    width: 40rem;
+    border-bottom: 6px #e1e1e1 solid;
+  }
+  .main__paragraph--container h3 {
+    width: 40rem;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .main__courses--container {
+    margin: 5rem 0;
+    padding: 2rem;
+    gap: 1rem;
+  }
+
+  .course {
+    font-size: 1.6rem;
+  }
+
+  .course img {
+    width: 9rem;
+  }
 }

@@ -19,7 +19,11 @@ const Main = () => {
           </h1>
         </div>
         <figure className="image__container">
-          <img src={ProfileImage} alt="foto-santiago" />
+          <img
+            className="profile__image"
+            src={ProfileImage}
+            alt="foto-santiago"
+          />
         </figure>
         <div className="main__paragraph--container">
           <h3>
@@ -29,7 +33,7 @@ const Main = () => {
         <div className="main__courses--container">
           {CourseItems.map((item, index) => {
             return (
-              <figure className="course">
+              <figure key={index} className="course">
                 <img src={item.img} alt="" />
                 <figcaption>{item.title}</figcaption>
               </figure>

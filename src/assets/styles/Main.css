@@ -70,6 +70,7 @@
   padding: 0.8rem;
   font-size: 12px;
   text-align: center;
+  scroll-behavior: smooth;
 }
 
 .course img {
@@ -219,6 +220,12 @@
 
   .course img {
     width: 5.5rem;
+  }
+
+  .course img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition-duration: 1s;
   }
 }
 

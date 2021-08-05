@@ -23,6 +23,7 @@
   border-radius: 20px;
   border: 1px gray solid;
   transform: scale(1.2);
+  transition-duration: 0.5s;
 }
 
 .header__items--container-hide {
@@ -60,6 +61,16 @@
   text-decoration: none;
   color: #99aecc;
   font-weight: 500;
+}
+
+.menu__item:hover {
+  color: white;
+  transition-duration: 0.7s;
+}
+.menu__item:focus {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #ff0000;
 }
 
 .header__logo--container img {
@@ -175,6 +186,10 @@
 
   .header__logo--container img {
     width: 12.5625rem;
+  }
+  .header__logo--container img:hover {
+    transform: scale(1.1);
+    transition-duration: 2s;
   }
   .header__menu--container {
     display: none;

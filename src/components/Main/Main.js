@@ -30,7 +30,7 @@ const Main = () => {
             Business Administration, passionate about IT, Lifelong Learning
           </h3>
         </div>
-        <div className="main__courses--container">
+        <div id="main__courses--container" className="main__courses--container">
           {CourseItems.map((item, index) => {
             return (
               <figure key={index} className="course">

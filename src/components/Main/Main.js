@@ -1,5 +1,6 @@
 import React from "react";
-import CourseItems from "./CoursesItems.js";
+import SkillsItems from "./CoursesItems.js";
+import ReactCircleModal from "react-circle-modal";
 
 //assets-static
 import ProfileImage from "../../assets/static/img-santigeek.png";
@@ -31,10 +32,28 @@ const Main = () => {
           </h3>
         </div>
         <div id="main__courses--container" className="main__courses--container">
-          {CourseItems.map((item, index) => {
+          {SkillsItems.map((item, index) => {
             return (
               <figure key={index} className="course">
-                <img src={item.img} alt="" />
+                <ReactCircleModal
+                  backgroundColor="#99aecc"
+                  toogleComponent={(onClick) => (
+                    <img onClick={onClick} src={item.img} alt="" />
+                  )}
+                  // Optional fields and their default values
+                  offsetX={0}
+                  offsetY={0}
+                >
+                  {(onClick) => (
+                    <div style={{ backgroundColor: "#fff", padding: "1em" }}>
+                      <iframe src="../../assets/static/product-management.pdf"></iframe>
+                      <img src="" alt="Mi certifcado" />
+                      <button onClick={onClick}>
+                        Click here to close modal
+                      </button>
+                    </div>
+                  )}
+                </ReactCircleModal>
                 <figcaption>{item.title}</figcaption>
               </figure>
             );

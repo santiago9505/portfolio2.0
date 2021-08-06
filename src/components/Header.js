@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import LogoDark from "../assets/static/logodark.png";
 import DarkMode from "../assets/static/darkmode-icon.png";
 import LightMode from "../assets/static/logolight.png";
-import { Sling as Hamburger } from "hamburger-react";
+import { Turn as Hamburger } from "hamburger-react";
 
 //styles
 import "../assets/styles/Header.css";
@@ -36,7 +36,7 @@ const Header = () => {
       </figure>
       <div className="menu">
         <div onClick={handleClick} className="header__menu--container">
-          <Hamburger duration={1} size={50} color="#4CA4D3" />
+          <Hamburger size={50} color="#4CA4D3" />
         </div>
         <ul
           id="menu"

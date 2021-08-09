@@ -46,8 +46,7 @@ const Main = () => {
                 >
                   {(onClick) => (
                     <div style={{ backgroundColor: "#fff", padding: "1em" }}>
-                      <iframe src="../../assets/static/product-management.pdf"></iframe>
-                      <img src="" alt="Mi certifcado" />
+                      <img className="certificate" src={item.img} alt="" />
                       <button onClick={onClick}>
                         Click here to close modal
                       </button>

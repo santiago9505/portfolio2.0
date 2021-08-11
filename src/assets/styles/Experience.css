@@ -93,7 +93,7 @@
   }
 
   .project__paragraph--container {
-    gap: 1.5rem;
+    gap: 3rem;
   }
 
   .experience__project--container {
@@ -101,7 +101,7 @@
   }
 
   .project__title {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .project__stack--title {
     font-size: 1rem;

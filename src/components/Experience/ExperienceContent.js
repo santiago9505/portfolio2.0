@@ -39,12 +39,12 @@ const Experience = () => {
       <figure className="experience__project--container">
         <Project
           img={ApeWebsite}
-          project="Agencia Pública de Empleo - SENA"
+          project="APE BOGOTÁ - SENA"
           stack="React, Firebase, Javascript, Tailwind, Html5, Css3, Npm"
         />
         <Project
           img={MoveWebsite}
-          project="Move.tech"
+          project={`Move.tech `}
           stack="Html5, Css3, Javascript. Github(pages)"
         />
         <Project

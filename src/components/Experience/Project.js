@@ -1,8 +1,6 @@
 import React from "react";
 import "../../assets/styles/Experience.css";
 
-import ApeWebsite from "../../assets/static/ape-website.png";
-
 class Project extends React.Component {
   render() {
     return (

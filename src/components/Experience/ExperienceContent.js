@@ -5,6 +5,10 @@ import Project from "./Project.js";
 
 //assets
 import ApeWebsite from "../../assets/static/ape-website.png";
+import MoveWebsite from "../../assets/static/move-website.png";
+import PortfolioWebsite from "../../assets/static/portfolio-website.png";
+import RockWebsite from "../../assets/static/rock-website.png";
+import GeometryWebsite from "../../assets/static/geometry-website.png";
 
 const Experience = () => {
   return (
@@ -38,8 +42,26 @@ const Experience = () => {
           project="Agencia Pública de Empleo - SENA"
           stack="React, Firebase, Javascript, Tailwind, Html5, Css3, Npm"
         />
-        <Project />
-        <Project />
+        <Project
+          img={MoveWebsite}
+          project="Move.tech"
+          stack="Html5, Css3, Javascript. Github(pages)"
+        />
+        <Project
+          img={PortfolioWebsite}
+          project="My Portfolio"
+          stack="React, Firebase, Javascript, Html5, Css3, Nodejs"
+        />
+        <Project
+          img={RockWebsite}
+          project="Rock, Paper, Scissors..."
+          stack="Html5, Css3, Javascript, Firebase"
+        />
+        <Project
+          img={GeometryWebsite}
+          project="Figuras Geométricas"
+          stack="Html5, Css3, Javascript, Es6, Firebase"
+        />
       </figure>
     </div>
   );

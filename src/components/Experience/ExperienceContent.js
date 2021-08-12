@@ -41,26 +41,32 @@ const Experience = () => {
           img={ApeWebsite}
           project="APE BOGOTÁ - SENA"
           stack="React, Firebase, Javascript, Tailwind, Html5, Css3, Npm"
+          description="I created the website apebogota.com a website where people with disabilities can find job opportunities."
         />
         <Project
           img={MoveWebsite}
           project={`Move.tech `}
           stack="Html5, Css3, Javascript. Github(pages), Css grid"
+          description="Trying to undertake in the area of ​​finance, however by laws we quickly fail"
         />
         <Project
           img={PortfolioWebsite}
           project="My Portfolio"
           stack="React, Firebase, Javascript, Html5, Css3, Nodejs"
+          description="
+          My portfolio is made in React, and here I show my skills in frontend and basic database management"
         />
         <Project
           img={RockWebsite}
           project="Rock, Paper, Scissors..."
           stack="Html5, Css3, Javascript, Firebase"
+          description="A project from the platzi school of javascript, in which I implement an algorithm to win in rock paper or scissors"
         />
         <Project
           img={GeometryWebsite}
           project="Figuras Geométricas"
           stack="Html5, Css3, Javascript, Es6, Firebase"
+          description="A project made to explain a little basic geometry to a little cousin."
         />
       </figure>
     </div>

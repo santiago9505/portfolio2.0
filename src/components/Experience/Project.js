@@ -21,15 +21,8 @@ class Project extends React.Component {
             </div>
           </div>
           <div className="project__flip--back">
-            <h1>Agencia Pública de Empleo - SENA</h1>
-            <p>
-              I created the website{" "}
-              <a className="project__link" href="https://apebogota.com">
-                apebogota.com
-              </a>{" "}
-              a website where people with disabilities can find job
-              opportunities.
-            </p>
+            <h1>{this.props.project}</h1>
+            <p>{this.props.description}</p>
           </div>
         </div>
       </figure>

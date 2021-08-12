@@ -45,7 +45,7 @@ const Experience = () => {
         <Project
           img={MoveWebsite}
           project={`Move.tech `}
-          stack="Html5, Css3, Javascript. Github(pages)"
+          stack="Html5, Css3, Javascript. Github(pages), Css grid"
         />
         <Project
           img={PortfolioWebsite}

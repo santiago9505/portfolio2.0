@@ -5,17 +5,32 @@ class Project extends React.Component {
   render() {
     return (
       <figure className="project__container">
-        <img
-          className="project__img"
-          src={this.props.img}
-          alt="imagen-proyecto"
-        />
-        <div className="project__paragraph--container">
-          <h3 className="project__title">{this.props.project}</h3>
-          <article>
-            <h4 className="project__stack--title">Stack</h4>
-            <p className="project__stack">{this.props.stack}</p>
-          </article>
+        <div className="project__flip--container">
+          <div className="project__flip--front">
+            <img
+              className="project__img"
+              src={this.props.img}
+              alt="imagen-proyecto"
+            />
+            <div className="project__paragraph--container">
+              <h3 className="project__title">{this.props.project}</h3>
+              <article>
+                <h4 className="project__stack--title">Stack</h4>
+                <p className="project__stack">{this.props.stack}</p>
+              </article>
+            </div>
+          </div>
+          <div className="project__flip--back">
+            <h1>Agencia Pública de Empleo - SENA</h1>
+            <p>
+              I created the website{" "}
+              <a className="project__link" href="https://apebogota.com">
+                apebogota.com
+              </a>{" "}
+              a website where people with disabilities can find job
+              opportunities.
+            </p>
+          </div>
         </div>
       </figure>
     );

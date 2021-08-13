@@ -4,11 +4,21 @@ import ReactCircleModal from "react-circle-modal";
 
 //assets-static
 import ProfileImage from "../../assets/static/img-santigeek.png";
+import Arrow from "../../assets/static/arrow-left.png";
 
 //assets-styles
 import "../../assets/styles/Main.css";
 
 const Main = () => {
+  const handleScrollRight = () => {
+    handleChange(500);
+  };
+  const handleScrollLeft = () => {
+    handleChange(-500);
+  };
+  const handleChange = (number) => {
+    document.getElementById("main__courses--container").scrollLeft += number;
+  };
   return (
     <>
       <main className="main">
@@ -31,6 +41,13 @@ const Main = () => {
             Business Administration, passionate about IT, Lifelong Learning
           </h3>
         </div>
+        <div onClick={handleScrollLeft} className="arrow__left--container">
+          <img className="arrows arrow__left--img" src={Arrow} alt="" />
+        </div>
+        <div onClick={handleScrollRight} className="arrow__right--container">
+          <img className="arrows arrow__right--img" src={Arrow} alt="" />
+        </div>
+
         <div id="main__courses--container" className="main__courses--container">
           {SkillsItems.map((item, index) => {
             return (

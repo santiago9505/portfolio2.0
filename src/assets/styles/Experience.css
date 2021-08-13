@@ -171,7 +171,9 @@
     justify-items: center;
   }
   .experience__paragraphs {
-    width: 60%;
+    width: 50%;
+    text-align: justify;
+    text-justify: inter-word;
   }
 }
 

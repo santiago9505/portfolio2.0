@@ -8,6 +8,14 @@
   font-family: "Montserrat";
 }
 
+.arrow__left--container {
+  display: none;
+}
+
+.arrow__right--container {
+  display: none;
+}
+
 .main__title--container {
   display: flex;
   flex-direction: column;
@@ -166,7 +174,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-items: flex-start;
     padding: 1rem 4.5rem;
-    height: 73.5vh;
+    height: 72.5vh;
     margin: 0;
     font-family: "Montserrat";
   }
@@ -202,7 +210,7 @@
     border-radius: unset;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     margin: 0;
-    padding: 0 1rem;
+    padding: 0 3.4rem;
     align-items: center;
     gap: 3rem;
     left: 0;
@@ -226,6 +234,50 @@
     transform: scale(1.2);
     cursor: pointer;
     transition-duration: 1s;
+  }
+
+  .arrows {
+    width: 2.1rem;
+  }
+
+  .arrow__left--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.5rem;
+    height: 20vh;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(197, 197, 186);
+  }
+
+  .arrow__right--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.5rem;
+    height: 20vh;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(197, 197, 186);
+  }
+
+  .arrow__left--container:hover {
+    transition-duration: 0.5s;
+    background-color: #99aecc;
+  }
+  .arrow__right--container:hover {
+    transition-duration: 0.5s;
+    background-color: #99aecc;
+  }
+
+  .arrow__right--img {
+    transform: rotate(180deg);
   }
 }
 
@@ -255,6 +307,12 @@
 
   .course img {
     width: 5.1rem;
+  }
+  .arrow__right--container {
+    height: 19vh;
+  }
+  .arrow__left--container {
+    height: 19vh;
   }
 }
 @media (min-width: 1500px) {
@@ -293,5 +351,11 @@
 
   .course img {
     width: 6rem;
+  }
+  .arrow__right--container {
+    height: 16vh;
+  }
+  .arrow__left--container {
+    height: 16vh;
   }
 }

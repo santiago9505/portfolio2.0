@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 //assets
 import LogoDark from "../assets/static/logodark.png";
-import DarkMode from "../assets/static/darkmode-icon.png";
-import LightMode from "../assets/static/logolight.png";
+import LogoLight from "../assets/static/logo.png";
+
 import { Turn as Hamburger } from "hamburger-react";
 
 //styles
@@ -21,18 +21,10 @@ const Header = () => {
     setOpen(!isOpen);
   };
 
-  const handleTheme = () => {
-    setDarkMode(!darkMode);
-    setTheme(!theme);
-  };
-
   return (
-    <header className="header">
-      <figure onClick={handleTheme} className="darkMode__button">
-        <img src={theme ? DarkMode : LightMode} alt="darkmode/lightmode" />
-      </figure>
+    <header className="headerDark">
       <figure className="header__logo--container">
-        <img src={LogoDark} alt="santigeek-logo" />
+        <img src={theme ? LogoLight : LogoDark} alt="santigeek-logo" />
       </figure>
       <div className="menu">
         <div onClick={handleClick} className="header__menu--container">

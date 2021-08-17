@@ -3,7 +3,8 @@ export const CoursesItems = [
     img: "https://static.platzi.com/media/achievements/badge-profesional-react-hooks-6b35d829-af8e-47e6-aef6-e4504db32bc4.png",
     title: "React",
     subtitle: "Fundamentos de Programación",
-    certificate: "https://t.co/eq3TUSR1eb?amp=1",
+    certificate:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-2-47ec2.appspot.com/o/react-courses.pdf?alt=media&token=dda9bf1f-960e-42e5-9287-4e70e0b13c9d",
   },
   {
     img: "https://static.platzi.com/media/achievements/badge-basico-ingles-e073f711-763d-4129-badc-5e4baa78b225.png",

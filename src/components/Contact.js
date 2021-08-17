@@ -110,15 +110,15 @@ const Contact = () => {
         <h1 className="contact__title">Let's Work Together!</h1>
         <h2 className="contact__items">
           <img src={Email} alt="" />{" "}
-          <Link className="contact__link" to="mailto:santigeek@hotmail.com">
+          <a className="contact__link" href="mailto:santigeek@hotmail.com">
             santigeek@hotmail.com
-          </Link>
+          </a>
         </h2>
         <h2 className="contact__items">
           <img src={Whatsapp} alt="" />{" "}
-          <Link className="contact__link" to="https://wa.me/qr/XCYPFO7562ULM1">
+          <a className="contact__link" href="https://wa.me/qr/XCYPFO7562ULM1">
             +57 3195619977
-          </Link>
+          </a>
         </h2>
       </article>
     </main>

@@ -62,10 +62,15 @@ const Main = () => {
                   offsetY={0}
                 >
                   {(onClick) => (
-                    <div style={{ backgroundColor: "#fff", padding: "1em" }}>
-                      <img className="certificate" src={item.img} alt="" />
-                      <button onClick={onClick}>
-                        Click here to close modal
+                    <div className="modal__container">
+                      <iframe
+                        title={item.name}
+                        className="certificates__pdfs"
+                        src={item.certificate}
+                        frameborder="0"
+                      ></iframe>
+                      <button className="modal__button" onClick={onClick}>
+                        Close
                       </button>
                     </div>
                   )}

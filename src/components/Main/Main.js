@@ -63,12 +63,16 @@ const Main = () => {
                 >
                   {(onClick) => (
                     <div className="modal__container">
+                      <button className="modal__button" onClick={onClick}>
+                        X
+                      </button>
                       <iframe
-                        title={item.name}
+                        title={item.title}
                         className="certificates__pdfs"
                         src={item.certificate}
-                        frameborder="0"
-                      ></iframe>
+                        type="application/pdf"
+                      />
+
                       <button className="modal__button" onClick={onClick}>
                         Close
                       </button>

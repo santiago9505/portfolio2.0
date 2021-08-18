@@ -105,9 +105,14 @@
   padding: 2rem;
 }
 
+.certificates__container {
+  width: 90%;
+}
+
 .certificates__pdfs {
-  width: 98%;
+  width: 90%;
   height: 20rem;
+  height: 50rem;
 }
 
 @media (min-width: 366px) {

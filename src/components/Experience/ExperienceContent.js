@@ -36,7 +36,7 @@ const Experience = () => {
       <article className="experience__title">
         <h1>Projects</h1>
       </article>
-      <figure className="experience__project--container">
+      <div className="experience__project--container">
         <Project
           img={ApeWebsite}
           project="APE BOGOTÁ - SENA"
@@ -68,7 +68,7 @@ const Experience = () => {
           stack="Html5, Css3, Javascript, Es6, Firebase"
           description="A project made to explain a little basic geometry to a little cousin."
         />
-      </figure>
+      </div>
     </div>
   );
 };

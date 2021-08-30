@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 import { db } from "../firebase";
 
@@ -109,13 +108,13 @@ const Contact = () => {
       <article className="contact__data--section">
         <h1 className="contact__title">Let's Work Together!</h1>
         <h2 className="contact__items">
-          <img src={Email} alt="" />{" "}
+          <img src={Email} alt="email-icon" />{" "}
           <a className="contact__link" href="mailto:santigeek@hotmail.com">
             santigeek@hotmail.com
           </a>
         </h2>
         <h2 className="contact__items">
-          <img src={Whatsapp} alt="" />{" "}
+          <img src={Whatsapp} alt="whatsapp-icon" />{" "}
           <a className="contact__link" href="https://wa.me/qr/XCYPFO7562ULM1">
             +57 3195619977
           </a>

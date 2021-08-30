@@ -33,7 +33,7 @@ const Main = () => {
           <img
             className="profile__image"
             src={ProfileImage}
-            alt="foto-santiago"
+            alt="foto-santiago-guaqueta"
           />
         </figure>
         <div className="main__paragraph--container">
@@ -42,10 +42,18 @@ const Main = () => {
           </h3>
         </div>
         <div onClick={handleScrollLeft} className="arrow__left--container">
-          <img className="arrows arrow__left--img" src={Arrow} alt="" />
+          <img
+            className="arrows arrow__left--img"
+            src={Arrow}
+            alt="arrow-left"
+          />
         </div>
         <div onClick={handleScrollRight} className="arrow__right--container">
-          <img className="arrows arrow__right--img" src={Arrow} alt="" />
+          <img
+            className="arrows arrow__right--img"
+            src={Arrow}
+            alt="arrow-right"
+          />
         </div>
 
         <div id="main__courses--container" className="main__courses--container">
@@ -55,7 +63,7 @@ const Main = () => {
                 <ReactCircleModal
                   backgroundColor="#99aecc"
                   toogleComponent={(onClick) => (
-                    <img onClick={onClick} src={item.img} alt="" />
+                    <img onClick={onClick} src={item.img} alt={item.title} />
                   )}
                   // Optional fields and their default values
                   offsetX={0}

@@ -4,7 +4,7 @@ import "../../assets/styles/Experience.css";
 class Project extends React.Component {
   render() {
     return (
-      <figure className="project__container">
+      <a href={this.props.link} className="project__container">
         <div className="project__flip--container">
           <div className="project__flip--front">
             <img
@@ -25,7 +25,7 @@ class Project extends React.Component {
             <p>{this.props.description}</p>
           </div>
         </div>
-      </figure>
+      </a>
     );
   }
 }

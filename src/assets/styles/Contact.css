@@ -116,4 +116,11 @@
     justify-content: space-around;
     flex-direction: row;
   }
+
+  @media (min-width: 1366px) {
+    .contact__container {
+      height: 70vh;
+      margin: 1rem;
+    }
+  }
 }

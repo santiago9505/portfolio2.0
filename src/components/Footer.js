@@ -19,7 +19,7 @@ const Footer = () => {
       <ul className="footer__items--container">
         <li className="contactme--container">
           <h3 className="footer__title">CONTENT</h3>
-          <a href="santigeek.com/blog">Blog</a>
+          <a href="https://blog-fb45f.web.app/">Blog</a>
         </li>
         <li className="contactme--container">
           <h3 className="footer__title">COURSES</h3>

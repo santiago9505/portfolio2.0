@@ -13,7 +13,7 @@ import "../assets/styles/Header.css";
 //context
 
 const Header = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  // const [darkMode, setDarkMode] = useState(false);
   const [theme, setTheme] = useState(false);
   const [isOpen, setOpen] = useState(false);
 

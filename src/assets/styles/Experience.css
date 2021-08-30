@@ -109,6 +109,10 @@
   font-weight: 500;
 }
 
+.arrows__container {
+  display: none;
+}
+
 @media (min-width: 366px) {
   .experience__container {
     margin-top: 2rem;
@@ -183,12 +187,15 @@
 
 @media (min-width: 1152px) {
   .experience__project--container {
+    margin: 0;
+    padding: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     height: 70vh;
-    padding-left: 38rem;
     overflow: scroll;
+    scroll-behavior: smooth;
+    width: 100%;
+    padding-left: 70rem;
   }
 
   .experience__project--container::-webkit-scrollbar {
@@ -196,7 +203,6 @@
   }
 
   .experience__container {
-    margin-left: 4rem;
     font-size: 1.28rem;
     line-height: 2rem;
   }
@@ -219,6 +225,47 @@
   .project__stack {
     font-size: 0.9rem;
   }
+
+  .arrows__container {
+    display: flex;
+    position: absolute;
+  }
+
+  .arrow__experience--left-container {
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.5rem;
+    height: 20vh;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    background-color: rgb(197, 197, 186);
+    left: 0;
+  }
+  .arrow__experience--right-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.5rem;
+    height: 20vh;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    background-color: rgb(197, 197, 186);
+  }
+
+  .arrow__experience--left-container:hover {
+    transition-duration: 0.5s;
+    background-color: #99aecc;
+  }
+  .arrow__experience--right-container:hover {
+    transition-duration: 0.5s;
+    background-color: #99aecc;
+  }
+  .arrow__experience--right-img {
+    transform: rotate(180deg);
+  }
 }
 
 @media (min-width: 1366px) {
@@ -226,9 +273,15 @@
     padding-top: 1rem;
     font-size: 1.1rem;
   }
+  .experience__project--container {
+    padding-left: 60rem;
+  }
 }
 
 @media (min-width: 1500px) {
+  .experience__project--container {
+    padding-left: 800px;
+  }
   .experience__container {
     font-size: 1.8rem;
     line-height: 2.3rem;

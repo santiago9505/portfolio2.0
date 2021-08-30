@@ -8,11 +8,11 @@ import AboutMe from "../pages/AboutMe.js";
 import Experience from "../pages/Experience.js";
 import ContactMe from "../pages/ContactMe.js";
 import ThemeContext from "../context/ThemeContext";
-import DarkMode from "../assets/static/darkmode-icon.png";
-import LightMode from "../assets/static/logolight.png";
+// import DarkMode from "../assets/static/darkmode-icon.png";
+// import LightMode from "../assets/static/logolight.png";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  // const [darkMode, setDarkMode] = useState(false);
   const [theme, setTheme] = useState(false);
   // const handleTheme = () => {
   //   setDarkMode(!darkMode);

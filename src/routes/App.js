@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "../App.css";
 import Home from "../pages/Home.js";
@@ -7,34 +7,32 @@ import Header from "../components/Header.js";
 import AboutMe from "../pages/AboutMe.js";
 import Experience from "../pages/Experience.js";
 import ContactMe from "../pages/ContactMe.js";
-import ThemeContext from "../context/ThemeContext";
-// import DarkMode from "../assets/static/darkmode-icon.png";
-// import LightMode from "../assets/static/logolight.png";
+
+import DarkMode from "../assets/static/darkmode-icon.png";
+import LightMode from "../assets/static/logolight.png";
 
 function App() {
-  // const [darkMode, setDarkMode] = useState(false);
   const [theme, setTheme] = useState(false);
-  // const handleTheme = () => {
-  //   setDarkMode(!darkMode);
-  //   setTheme(!theme);
-  // };
+  const handleTheme = () => {
+    setTheme(!theme);
+  };
   return (
-    <div className="App">
+    <div className={theme ? "App__light" : App}>
       <Router>
-        <ThemeContext.Provider>
-          <Header value={theme ? "headerDark" : "black"} />
-        </ThemeContext.Provider>
+        <Header theme={theme} setTheme={setTheme} />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/">
+            <Home theme={theme} setTheme={setTheme} />
+          </Route>
           <Route exact path="/about-me" component={AboutMe} />
           <Route exact path="/experience" component={Experience} />
           <Route exact path="/contact" component={ContactMe} />
         </Switch>
-        <Footer />
+        <Footer theme={theme} setTheme={setTheme} />
       </Router>
-      {/* <figure onClick={handleTheme} className="darkMode__button">
-        <img src={theme ? DarkMode : LightMode} alt="darkmode/lightmode" />
-      </figure> */}
+      <figure onClick={handleTheme} className="darkMode__button">
+        <img src={theme ? LightMode : DarkMode} alt="darkmode/lightmode" />
+      </figure>
     </div>
   );
 }

@@ -63,6 +63,14 @@
   font-weight: 500;
 }
 
+.menu__item--light {
+  color: #1e2d42 !important;
+  font-weight: 600;
+}
+.menu__item--light:hover {
+  color: #99aecc !important;
+}
+
 .menu__item:hover {
   color: white;
   transition-duration: 0.7s;

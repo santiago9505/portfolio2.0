@@ -2,7 +2,7 @@ import React from "react";
 import Main from "../components/Main/Main.js";
 import { Helmet } from "react-helmet";
 
-const Home = () => {
+const Home = ({ theme, setTheme }) => {
   return (
     <>
       <Helmet>
@@ -28,7 +28,7 @@ const Home = () => {
         <meta property="og:type" content="portfolio" />
         <meta property="fb:app_id" content="santiago.guaquetaangarita" />
       </Helmet>
-      <Main />
+      <Main theme={theme} setTheme={setTheme} />
     </>
   );
 };

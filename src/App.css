@@ -16,6 +16,11 @@ body {
   padding: 0;
 }
 
+.App__light {
+  padding: 0;
+  background-color: #e0e7f0;
+}
+
 .bg-light {
   background-color: red;
 }

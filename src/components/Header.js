@@ -12,9 +12,7 @@ import "../assets/styles/Header.css";
 
 //context
 
-const Header = () => {
-  // const [darkMode, setDarkMode] = useState(false);
-  const [theme, setTheme] = useState(false);
+const Header = ({ theme, setTheme }) => {
   const [isOpen, setOpen] = useState(false);
 
   const handleClick = () => {
@@ -39,22 +37,34 @@ const Header = () => {
           }
         >
           <li>
-            <Link className="menu__item" to="/">
+            <Link
+              className={theme ? "menu__item menu__item--light" : "menu__item"}
+              to="/"
+            >
               HOME
             </Link>
           </li>
           <li>
-            <Link className="menu__item" to="/about-me">
+            <Link
+              className={theme ? "menu__item menu__item--light" : "menu__item"}
+              to="/about-me"
+            >
               ABOUT ME
             </Link>
           </li>
           <li>
-            <Link className="menu__item" to="/experience">
+            <Link
+              className={theme ? "menu__item menu__item--light" : "menu__item"}
+              to="/experience"
+            >
               EXPERIENCE
             </Link>
           </li>
           <li>
-            <Link className="menu__item" to="/contact">
+            <Link
+              className={theme ? "menu__item menu__item--light" : "menu__item"}
+              to="/contact"
+            >
               CONTACT ME
             </Link>
           </li>

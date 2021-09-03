@@ -9,7 +9,7 @@ import Arrow from "../../assets/static/arrow-left.png";
 //assets-styles
 import "../../assets/styles/Main.css";
 
-const Main = () => {
+const Main = ({ theme, setTheme }) => {
   const handleScrollRight = () => {
     handleChange(500);
   };
@@ -22,8 +22,14 @@ const Main = () => {
   return (
     <>
       <main className="main">
-        <div className="main__title--container">
-          <h1>Hello,</h1>
+        <div
+          className={
+            theme
+              ? "main__title--container main__title--container-dark"
+              : "main__title--container"
+          }
+        >
+          <h1 className={theme ? "hello__normal" : "hello__dark"}>Hello,</h1>
           <h1>this is</h1>
           <h1>
             <strong>Santiago</strong>{" "}
@@ -36,7 +42,13 @@ const Main = () => {
             alt="foto-santiago-guaqueta"
           />
         </figure>
-        <div className="main__paragraph--container">
+        <div
+          className={
+            theme
+              ? "main__paragraph--container main__paragraph--container-dark"
+              : "main__paragraph--container"
+          }
+        >
           <h3>
             Business Administration, passionate about IT, Lifelong Learning
           </h3>

@@ -11,7 +11,7 @@ import RockWebsite from "../../assets/static/rock-website.png";
 import GeometryWebsite from "../../assets/static/geometry-website.png";
 import Arrow from "../../assets/static/arrow-left.png";
 
-const Experience = () => {
+const Experience = ({ theme, setTheme }) => {
   const handleScrollRight = () => {
     handleChange(500);
   };
@@ -24,33 +24,41 @@ const Experience = () => {
   };
   return (
     <div className="experience__container">
-      <article className="experience__title">
+      <article
+        className={
+          theme
+            ? "experience__title experience__title--light"
+            : "experience__title"
+        }
+      >
         <h1>Experience</h1>
       </article>
-      <div className="experience__paragraphs">
-        <article>
-          I am a <strong className="first__type">Full-Stack Developer</strong>{" "}
-          with 1 year of experience providing hight impact web solutions,
-          specializes using{" "}
-          <strong className="second__type">
-            react, node-js, javascript tailwind and firebase
-          </strong>
-          , to build diferente types of websites.
-        </article>
+      <div
+        className={
+          theme
+            ? "experience__paragraphs experience__paragraphs--light"
+            : "experience__paragraphs"
+        }
+      >
         <article>
           I have had experience as a{" "}
           <strong className="third__type">frontend developer,</strong>{" "}
-          management and counselor, my currently position is as a frontend
-          developer and professional counselor, It has been a great experience
-          to work with a huge team of talented employees and together we have
-          achieved our
+          management and counselor, my last position was as a frontend developer
+          and professional counselor, It was a great experience to work with a
+          huge team of talented employees and together we achieved our{" "}
           <strong className="third__type">company goals,</strong> due to the
           website, I talked with whole the team to find out their needs, and
-          talk with the users to get feedback. I have worked there for 2 years
-          and Also we helped people with disabilities to get a job.
+          talk with the users to get feedback. I worked there for 2 years and
+          also we helped people with disabilities to get a job.
         </article>
       </div>
-      <article className="experience__title">
+      <article
+        className={
+          theme
+            ? "experience__title experience__title--light"
+            : "experience__title"
+        }
+      >
         <h1>Projects</h1>
       </article>
       <div

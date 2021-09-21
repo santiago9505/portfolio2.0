@@ -24,9 +24,15 @@ function App() {
           <Route exact path="/">
             <Home theme={theme} setTheme={setTheme} />
           </Route>
-          <Route exact path="/about-me" component={AboutMe} />
-          <Route exact path="/experience" component={Experience} />
-          <Route exact path="/contact" component={ContactMe} />
+          <Route exact path="/about-me">
+            <AboutMe theme={theme} setTheme={setTheme} />
+          </Route>
+          <Route exact path="/experience">
+            <Experience theme={theme} setTheme={setTheme} />
+          </Route>
+          <Route exact path="/contact">
+            <ContactMe theme={theme} setTheme={setTheme} />
+          </Route>
         </Switch>
         <Footer theme={theme} setTheme={setTheme} />
       </Router>

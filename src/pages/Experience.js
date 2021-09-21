@@ -1,10 +1,10 @@
 import React from "react";
 import ExperienceContent from "../components/Experience/ExperienceContent.js";
 
-const Experience = () => {
+const Experience = ({ theme, setTheme }) => {
   return (
     <>
-      <ExperienceContent />
+      <ExperienceContent theme={theme} setTheme={setTheme} />
     </>
   );
 };

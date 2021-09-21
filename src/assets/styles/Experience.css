@@ -13,12 +13,20 @@
   color: #99aecc;
 }
 
+.experience__title--light {
+  color: #1e2242 !important;
+}
+
 .experience__paragraphs {
   display: flex;
   flex-direction: column;
   gap: 1.8rem;
   font-weight: 500;
   color: white;
+}
+
+.experience__paragraphs--light {
+  color: black !important;
 }
 
 .project__container {

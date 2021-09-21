@@ -95,6 +95,10 @@
   color: #91aacc;
 }
 
+.contact__title--light {
+  color: #5884c3 !important;
+}
+
 .contact__items {
   font-size: 1.1rem;
   font-weight: 500;
@@ -105,6 +109,10 @@
 
 .contact__link {
   color: white;
+}
+
+.contact__link--light {
+  color: black !important;
 }
 
 .contact__items img {

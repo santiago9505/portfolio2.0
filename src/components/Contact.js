@@ -9,7 +9,7 @@ import Whatsapp from "../assets/static/whatsapp-icon.png";
 //styles
 import "../assets/styles/Contact.css";
 
-const Contact = () => {
+const Contact = ({ theme, setTheme }) => {
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -106,16 +106,32 @@ const Contact = () => {
         </form>
       </div>
       <article className="contact__data--section">
-        <h1 className="contact__title">Let's Work Together!</h1>
+        <h1
+          className={
+            theme ? "contact__title contact__title--light" : "contact__title"
+          }
+        >
+          Let's Work Together!
+        </h1>
         <h2 className="contact__items">
           <img src={Email} alt="email-icon" />{" "}
-          <a className="contact__link" href="mailto:santigeek@hotmail.com">
+          <a
+            className={
+              theme ? "contact__link contact__link--light" : "contact__link"
+            }
+            href="mailto:santigeek@hotmail.com"
+          >
             santigeek@hotmail.com
           </a>
         </h2>
         <h2 className="contact__items">
           <img src={Whatsapp} alt="whatsapp-icon" />{" "}
-          <a className="contact__link" href="https://wa.me/qr/XCYPFO7562ULM1">
+          <a
+            className={
+              theme ? "contact__link contact__link--light" : "contact__link"
+            }
+            href="https://wa.me/qr/XCYPFO7562ULM1"
+          >
             +57 3195619977
           </a>
         </h2>

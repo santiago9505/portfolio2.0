@@ -1,10 +1,10 @@
 import React from "react";
 import Contact from "../components/Contact.js";
 
-const ContactMe = () => {
+const ContactMe = ({ theme, setTheme }) => {
   return (
     <>
-      <Contact />
+      <Contact theme={theme} setTheme={setTheme} />
     </>
   );
 };

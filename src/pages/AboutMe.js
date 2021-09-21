@@ -1,10 +1,10 @@
 import React from "react";
 import About from "../components/About.js";
 
-const AboutMe = () => {
+const AboutMe = ({ theme, setTheme }) => {
   return (
     <>
-      <About />
+      <About theme={theme} setTheme={setTheme} />
     </>
   );
 };

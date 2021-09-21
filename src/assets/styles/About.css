@@ -14,12 +14,20 @@
   color: #99aecc;
 }
 
+.about__title--light {
+  color: #1e2d42 !important;
+}
+
 .about__paragraphs {
   display: flex;
   flex-direction: column;
   gap: 1.8rem;
   font-weight: 500;
   color: white;
+}
+
+.about__paragraphs--light {
+  color: black !important;
 }
 
 .first__type {
@@ -30,8 +38,16 @@
   color: #99aecc;
 }
 
+.second__type--light {
+  color: black !important;
+}
+
 .third__type {
   color: #91aacc;
+}
+
+.third__type--light {
+  color: black !important;
 }
 
 @media (min-width: 366px) {

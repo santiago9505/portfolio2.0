@@ -63,7 +63,7 @@ const Header = ({ theme, setTheme }) => {
           <li>
             <Link
               className={theme ? "menu__item menu__item--light" : "menu__item"}
-              to="/contact"
+              to="/contactme"
             >
               CONTACT ME
             </Link>

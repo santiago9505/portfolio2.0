@@ -2,11 +2,13 @@ import React from "react";
 
 import "../../assets/styles/Project.css";
 
-const Project = ({ source }) => {
+const Project = ({ source, project }) => {
   return (
-    <div className="project__container">
-      <img className="project__img" src={source} alt={source} />
-      <div className="project__line"></div>
+    <div className="project__section">
+      <div className="project__container">
+        <img id={project} className="project__img" src={source} alt={source} />
+        <div className="project__line"></div>
+      </div>
     </div>
   );
 };

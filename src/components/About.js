@@ -17,9 +17,9 @@ const About = ({ theme, setTheme }) => {
         }
       >
         <article>
-          I am a <strong className="first__type">Full-Stack Developer</strong>{" "}
-          with 1 year of experience providing hight impact web solutions,
-          specializes using{" "}
+          I am a <strong className="first__type">Product Developer</strong> with
+          more than 1 year of experience creating technological solutions from
+          different roles, from developing websites with{" "}
           <strong
             className={
               theme ? "second__type second__type--light" : "second__type"
@@ -27,7 +27,7 @@ const About = ({ theme, setTheme }) => {
           >
             react, node-js, javascript tailwind and firebase
           </strong>
-          , to build diferente types of websites.
+          , to leading software projects for large companies abroad.
         </article>
         <article>
           I know about code, but I understand that is not just to develop, is to{" "}
@@ -36,8 +36,8 @@ const About = ({ theme, setTheme }) => {
           >
             create a product for people
           </strong>{" "}
-          and I combine my knowledge as a full-stack developer with my knwledge
-          in Business Administration.
+          and I combine my knowledge as a developer with my knwledge in Business
+          Administration.
         </article>
       </div>
     </div>

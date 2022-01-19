@@ -29,7 +29,7 @@ const Main = ({ theme, setTheme }) => {
               : "main__title--container"
           }
         >
-          <h1 className={theme ? "hello__normal" : "hello__dark"}>Hello,</h1>
+          <h1 className={theme ? "hello__normal" : "hello__dark"}>Chongo,</h1>
           <h1>this is</h1>
           <h1>
             <strong>Santiago</strong>{" "}

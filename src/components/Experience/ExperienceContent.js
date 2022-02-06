@@ -12,14 +12,17 @@ import Arrow from "../../assets/static/arrow-left.png";
 
 const Experience = ({ theme, setTheme }) => {
   const handleScrollRight = () => {
-    handleChange(500);
+    handleChange(4.25);
   };
   const handleScrollLeft = () => {
-    handleChange(-500);
+    handleChange(-4.25);
   };
   const handleChange = (number) => {
+    var totalWidth = document.getElementById(
+      "experience__project--container"
+    ).clientWidth;
     document.getElementById("experience__project--container").scrollLeft +=
-      number;
+      (number * totalWidth) / 4;
   };
   return (
     <div className="experience__container">
@@ -60,14 +63,32 @@ const Experience = ({ theme, setTheme }) => {
       >
         <h1>Projects</h1>
       </article>
-      <div
-        id="experience__project--container"
-        className="experience__project--container"
-      >
-        <Project project={"vcc"} source={vcc} />
-        <Project project={"ape"} source={ape} />
-        <Project project={"thinki"} source={thinkigrow} />
-        <Project project={"move"} source={move} />
+      <div className="project__relative--container">
+        <div
+          id="experience__project--container"
+          className="experience__project--container"
+        >
+          <Project
+            project={"vcc"}
+            source={vcc}
+            link={"https://www.vintagecashcow.co.uk/"}
+          />
+          <Project
+            project={"ape"}
+            source={ape}
+            link={"https://apebogota.com/"}
+          />
+          <Project
+            project={"thinki"}
+            source={thinkigrow}
+            link={"https://thinkigrow.com/"}
+          />
+          <Project
+            project={"move"}
+            source={move}
+            link={"https://thinkigrow.com/"}
+          />
+        </div>
         <div
           onClick={handleScrollLeft}
           className="project__arrow__left--container"

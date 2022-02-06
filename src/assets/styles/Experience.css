@@ -84,6 +84,7 @@
     justify-content: start;
     gap: 7rem;
     overflow-x: auto;
+    scroll-behavior: smooth;
   }
 
   .experience__project--container::-webkit-scrollbar {
@@ -96,6 +97,10 @@
 
   .project__arrows {
     width: 2.1rem;
+  }
+
+  .project__relative--container {
+    position: relative;
   }
 
   .project__arrow__right--img {
@@ -111,6 +116,7 @@
     z-index: 1;
     position: absolute;
     background-color: rgb(197, 197, 186);
+    top: 40%;
   }
 
   .project__arrow__right--container {
@@ -123,6 +129,7 @@
     position: absolute;
     background-color: rgb(197, 197, 186);
     right: 0;
+    top: 40%;
   }
 }
 

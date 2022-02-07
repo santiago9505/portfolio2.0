@@ -17,27 +17,26 @@ const About = ({ theme, setTheme }) => {
         }
       >
         <article>
-          I am a <strong className="first__type">Product Developer</strong> with
-          more than 1 year of experience creating technological solutions from
-          different roles, from developing websites with{" "}
+          <strong className="first__type">Scrum Master</strong>{" "}
+           with over a year of experience leading agile development teams, helping teams drive relentless improvement and progress towards goals. 
+           Knowledge in {" "}
           <strong
             className={
               theme ? "second__type second__type--light" : "second__type"
             }
           >
-            react, node-js, javascript tailwind and firebase
+            requirements analysis, agile project management {" "}
           </strong>
-          , to leading software projects for large companies abroad.
+          conducting agile ceremonies and working as a team to achieve results.
         </article>
         <article>
-          I know about code, but I understand that is not just to develop, is to{" "}
+          Some of my strengths are leadership, teamwork, decision making, {" "}
           <strong
             className={theme ? "third__type third__type--light" : "third__type"}
           >
-            create a product for people
+            working under pressure, results analysis 
           </strong>{" "}
-          and I combine my knowledge as a developer with my knwledge in Business
-          Administration.
+          and attention to detail.
         </article>
       </div>
     </div>

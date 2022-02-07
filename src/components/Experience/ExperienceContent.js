@@ -45,7 +45,7 @@ const Experience = ({ theme, setTheme }) => {
         {/* I currently work as a product owner at Element 43, where we work with agile methodologies (SCRUM) to develop technological solutions for companies in the Netherlands, but I have also had experience working as a frontend developer. Developing software from different areas but that have in common the love for product development.  */}
         <article>
           I currently work as a{" "}
-          <strong className="third__type">product owner</strong> at Element 43,
+          <strong className="third__type">Scrum Master</strong> at Element 43,
           where we work with agile methodologies (SCRUM) to develop
           technological solutions for companies in the Netherlands, but I have
           also had experience working as a{" "}
